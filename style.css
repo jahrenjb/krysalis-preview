@@ -404,21 +404,20 @@ cursor:pointer;
 
 /* --------------ABOUT----------- */
 
-.about-hero {
-    height: 520px;
-    background-image: url("images/about-hero.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center;    /* Horizontal centering */
-    justify-content: center; /* Vertical centering */
-    text-align: center;
-    margin-top: 80px;       /* Keeps space for the fixed nav */
-    color: white;
-    position: relative;
-    padding-top: 0;         /* REMOVE the 120px padding */
+.about-hero{
+height:520px;
+background-image:url("images/about-hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+margin-top:80px;
+color:white;
+position:relative;
 }
+
 
 .about-hero h1{
 font-size:48px;
@@ -456,6 +455,11 @@ opacity:0.9;
 
 .about-subnav a:hover{
 opacity:1;
+}
+
+.learn img{
+height:100px;
+margin-bottom:20px;
 }
 
 /* MOBILE STYLES */
@@ -534,13 +538,15 @@ font-size:18px;
 
 /* HERO NAV */
 
+
+
 .about-subnav{
-margin-top:28px;
-max-width: 400px;
+bottom:12px;
+max-width:400px;
 display:flex;
-gap:20px;
 justify-content:center;
 flex-wrap:wrap;
+gap:4px 16px;
 font-size:13px;
 letter-spacing:1px;
 }
