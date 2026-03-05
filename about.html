@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Krysalis</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+/* SUB NAV */
+
+.about-subnav{
+position:absolute;
+bottom:35px;
+width:100%;
+display:flex;
+justify-content:center;
+gap:15px 40px;
+font-size:14px;
+letter-spacing:1px;
+flex-wrap:wrap;
+}
+
+.about-subnav a{
+color:white;
+text-decoration:none;
+}
+
+/* WHO WE ARE */
+
+.about-intro{
+background:#f3f1f4;
+padding:80px 20px;
+text-align:center;
+}
+
+.about-intro h2{
+font-size:36px;
+color:#4B3D63;
+}
+
+.about-intro span{
+color:#C45A7C;
+}
+
+.about-intro p{
+max-width:700px;
+margin:20px auto;
+line-height:1.7;
+}
+
+/* INTERSECTION */
+
+.intersection{
+background:linear-gradient(to bottom, #f0e5d4, #ffffff);
+padding:100px 20px;
+}
+
+.intersection-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:80px;
+}
+
+.intersection-text{
+flex:1;
+}
+
+.intersection-text h2{
+font-size:38px;
+color:#4B3D63;
+}
+
+.intersection-text span{
+color:#C45A7C;
+}
+
+.intersection-text p{
+margin-top:20px;
+line-height:1.7;
+}
+
+.intersection-graphic{
+flex:1;
+text-align:center;
+}
+
+.intersection-graphic img{
+max-width:800px;
+width:100%;
+}
+
+/* TEAM SECTION */
+
+.team{
+background-image:url("images/team-bg.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+position:relative;
+}
+
+.team::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(60,40,80,0.75);
+}
+
+.team-content{
+position:relative;
+max-width:700px;
+margin:auto;
+}
+
+.team h2{
+font-size:42px;
+color:#F6D9A7;
+margin-bottom:20px;
+}
+
+.team p{
+line-height:1.7;
+}
+
+/* LEARN MORE */
+
+.learn{
+background:#111;
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.learn h2{
+color:#F6D9A7;
+font-size:36px;
+margin-bottom:20px;
+}
+
+.learn p{
+max-width:600px;
+margin:auto;
+line-height:1.7;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.about-hero h1{
+font-size:36px;
+}
+
+.intersection-container{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="nav">
+
+<div class="nav-container">
+
+<div class="logo">
+<img src="images/logo.svg" alt="Krysalis">
+</div>
+
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="clinicians.html">Clinicians</a>
+<a href="patientsfamilies.html">Patients & Families</a>
+<a href="technology.html">Technology</a>
+<a href="evidence.html">Evidence</a>
+<a href="about.html">About</a>
+</nav>
+
+<button class="cta">Get Started</button>
+
+<button class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</div>
+
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<div class="mobile-menu-header">
+
+<img src="images/logo.svg" alt="Krysalis" class="mobile-logo">
+
+<button class="close-menu" onclick="toggleMenu()">✕</button>
+
+</div>
+
+<a href="index.html">Home</a>
+<a href="clinicians.html">Clinicians</a>
+<a href="patientsfamilies.html">Patients & Families</a>
+<a href="technology.html">Technology</a>
+<a href="evidence.html">Evidence</a>
+<a href="about.html">About</a>
+
+<button class="mobile-cta">GET STARTED</button>
+
+</div>
+
+<section class="about-hero">
+
+<div class="about-hero-content">
+
+<h1>A Network of Recovery</h1>
+
+<p>
+Krysalis brings together clinics, research groups, manufacturers and innovators to support and innovate burn recovery.
+</p>
+
+<div class="about-subnav">
+<a href="#">OVERVIEW</a>
+<a href="#">MISSION & ORIGIN</a>
+<a href="#">TEAM & ADVISORS</a>
+<a href="#">PARTNERS</a>
+<a href="#">NEWS</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="about-intro">
+
+<h2>Who We are and <span>Why We Exist</span></h2>
+
+<p>
+Krysalis exists to support people recovering from burn injury and the clinicians who care for them. Recovery is complex, personal, and long-term—and it deserves tools that are designed with intention and responsibility.
+</p>
+
+<p>
+Our focus is not on novelty, but on building garments and systems that support healing in the real world, over time, and within established standards of care.
+</p>
+
+</section>
+
+<section class="intersection">
+
+<div class="intersection-container">
+
+<div class="intersection-text">
+
+<h2>
+Built at the Intersection of <br>
+<span>Care, Craft, and Technology</span>
+</h2>
+
+<p>
+Effective recovery support requires more than any single discipline. Krysalis is built at the intersection of clinical care, garment craftsmanship, and technology—bringing these elements together to support consistency, comfort, and reliability.
+</p>
+
+<p>
+Clinical insight guides what matters, craft ensures garments are wearable and durable, and technology enables precision and repeatability. Each element is necessary, but none stands alone.
+</p>
+
+</div>
+
+<div class="intersection-graphic">
+
+<img src="images/intersection-graphic.png">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="team">
+
+<div class="team-content">
+
+<h2>A Team Guided by Clinical Experience and Empathy</h2>
+
+<p>
+The Krysalis team includes people with backgrounds in healthcare, product design, manufacturing, and technology—united by a shared respect for the realities of recovery.
+Our work is shaped by listening to clinicians, learning from patients’ experiences, and approaching design decisions with empathy for those who live with the outcomes every day.
+</p>
+
+</div>
+
+</section>
+
+<section class="learn">
+<img src="images/logo-icon.svg" alt="Krysalis icon">
+
+<h2>Learn More About Krysalis</h2>
+
+<p>
+Additional pages provide more information about our mission, team, partners, and ongoing work. These sections are intended to offer transparency and context for those who want to learn more.
+</p>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Krysalis</p>
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+window.onscroll = function() {
+const nav = document.querySelector('.nav');
+
+if (window.scrollY > 50){
+nav.classList.add('scrolled');
+}else{
+nav.classList.remove('scrolled');
+}
+
+};
+
+</script>
+
+</body>
+</html>
