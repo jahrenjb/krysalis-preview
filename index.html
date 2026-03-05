@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Krysalis</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<header class="nav">
+
+<div class="nav-container">
+
+<div class="logo">
+<img src="images/logo.svg" alt="Krysalis">
+</div>
+
+<nav class="desktop-nav">
+<a href="#">Home</a>
+<a href="#">Clinicians</a>
+<a href="#">Patients & Families</a>
+<a href="#">Technology</a>
+<a href="#">Evidence</a>
+<a href="#">About</a>
+</nav>
+
+<button class="cta">Get Started</button>
+
+<button class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</div>
+
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<div class="mobile-menu-header">
+
+<img src="images/logo.svg" alt="Krysalis" class="mobile-logo">
+
+<button class="close-menu" onclick="toggleMenu()">✕</button>
+
+</div>
+
+<a href="#">Home</a>
+<a href="#">Clinicians</a>
+<a href="#">Patients & Families</a>
+<a href="#">Technology</a>
+<a href="#">Evidence</a>
+<a href="#">About</a>
+
+<button class="mobile-cta">GET STARTED</button>
+
+</div>
+
+
+
+<section class="hero">
+
+<div class="container hero-container">
+
+<div class="hero-text">
+
+<h1>Advancing Recovery<br>After Burn Injury</h1>
+
+<p>
+Custom compression garments designed to support healing and long-term recovery after burn injury.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="compression">
+
+<div class="container compression-container">
+
+<div class="compression-image">
+<img src="images/sleeve.png">
+</div>
+
+<div class="compression-text">
+
+<h2>Custom Compression Garments<br>for Phase-Three Healing</h2>
+
+<p>
+Each garment is precisely measured and manufactured to support healing, improve comfort, and reduce hypertrophic scarring during recovery.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="audience">
+
+<div class="container audience-container">
+
+<div class="audience-text">
+
+<h2>
+Designed for <span class="orange">Patients</span>.<br>
+Built for <span class="yellow">Clinicians</span>.<br>
+Trusted by <span class="pink">Institutions</span>.
+</h2>
+
+<p>
+Krysalis garments are developed in collaboration with burn centers and clinicians to deliver precision, comfort, and measurable healing outcomes.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="audience-image">
+<img src="images/hands.png">
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="product-dark">
+
+<div class="container dark-content">
+
+<h2>A New Standard in Fit,<br>Comfort, and Healing</h2>
+
+<p>
+Precision engineering meets medical expertise to deliver compression therapy designed for real recovery.
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="dark-image">
+<img src="images/leg-dark.jpg" alt="Compression garment">
+</div>
+
+</section>
+
+
+
+<section class="explore">
+
+<img src="images/logo-icon.svg">
+
+<h2>Explore Krysalis</h2>
+
+<p>
+Learn more about our technology, clinical process, and impact.
+</p>
+
+<button>Explore</button>
+
+</section>
+
+
+
+<footer class="footer">
+
+<p>© 2026 Krysalis</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+window.onscroll = function() {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+};
+
+function toggleMenu(){
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+</script>
+
+
+
+</body>
+
+</html>
